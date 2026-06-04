@@ -1,5 +1,5 @@
 import { toast } from 'react-hot-toast';
-const backendURL = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '';
+const backendURL = import.meta.env.VITE_BACKEND_URL;
 
 export const getAllProblemsService = async () => {
   try {
